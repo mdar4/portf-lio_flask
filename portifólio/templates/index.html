@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style-->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <!-- OWL -->
+    <link rel="stylesheet" href="/static/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/owl/owl.theme.default.min.css">
+    <title>Portifólio</title>
+</head>
+<body>
+    <nav class="menu-items">
+        <ul>
+            <li><a  href="#sobre">Sobre mim</a></li>
+            <li><a  href="#projetos">Projetos</a></li>
+            <li><a  href="#habilidade">Habilidades</a></li>
+            <li><a  href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header class="header-wrapper">
+        <h1>Dara Fontoura</h1>
+        <h2>Front-end Developer</h2>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/dara-fontoura-da-silva-98917b1a6/" target="_blank">Linkedin</a>
+            <a href="https://github.com/mdar4" target="_blank">Github</a>
+        </div>
+    </header>
+
+    <section class="first">
+        <div id="phrase">
+            <h3>
+                "Nunca é tarde demais para ser aquilo que sempre desejou ser."
+            </h3>
+            <p>George Eliot</p>
+        </div>
+        <div id="image" >
+            <img width="450px" src="/static/img/—Pngtree—playing computer computer hand painted_3843004.png" alt="">
+        </div>
+    </section>
+    <hr>
+
+    <section id="sobre" class="two">
+        <div class="wrapper">
+            <div class="chatbot">
+                <div class="chatbot__loading"></div>
+                <div class="chatbot__loading"></div>
+                <div class="chatbot__loading"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Sou uma garota que ama tecnologia, obras de arte, livros e música. Conheci o mundo da programação no final de 2020 e desde então dedico os meus dias ao aprendizado. Sou apaixonada por Front-End desde que fiz minha primeira telinha.</p>
+            <p>Atualmente, curso Tecnologia da Informação, com foco em Front-End na Blue EdTech e pretendo me tornar Front-end Engineer. </p>
+        </div>
+    </section>
+    <hr>
+
+    <section id="projetos" class="project carrossel">
+        <div class="owl-carousel owl-theme">
+            <div class="card">
+                <img  src="/static/img/img-lerem.png" alt="">
+                <h1>Projeto 1</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet laborum quae omnis autem libero, suscipit quisquam odio repellendus ab dignissimos porro quod, rerum recusandae quos distinctio unde. Quasi, nulla nihil?</p>
+                <button>Veja mais</button>
+            </div>
+            <div class="card">
+                <img src="/static/img/img-lerem.png" alt="">
+                <h1>Projeto 2</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet laborum quae omnis autem libero, suscipit quisquam odio repellendus ab dignissimos porro quod, rerum recusandae quos distinctio unde. Quasi, nulla nihil?</p>
+                <button>Veja mais</button>
+            </div>
+            <div class="card">
+                <img src="/static/img/img-lerem.png" alt="">
+                <h1>Projeto 3</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet laborum quae omnis autem libero, suscipit quisquam odio repellendus ab dignissimos porro quod, rerum recusandae quos distinctio unde. Quasi, nulla nihil?</p>
+                <button>Veja mais</button>
+            </div>
+            <div class="card">
+                <img src="/static/img/img-lerem.png" alt="">
+                <h1>Projeto 3</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet laborum quae omnis autem libero, suscipit quisquam odio repellendus ab dignissimos porro quod, rerum recusandae quos distinctio unde. Quasi, nulla nihil?</p>
+                <button>Veja mais</button>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="habilidade" class="hab">
+        <h2>Habilidades Técnicas</h2>
+        <p>HTML 5</p>
+        <div>
+            <span id="html5">75%</span>
+        </div>
+        <p>CSS 3</p>
+        <div>
+            <span id="css">60%</span>
+        </div>
+        <p>JavaScript</p>
+        <div>
+            <span id="js">35%</span>
+        </div>
+        <p>Python</p>
+        <div>
+            <span id="py">45%</span>
+        </div>
+        <p>Flask</p>
+        <div>
+            <span id="flask">15%</span>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>
+            Entre em <br>
+             contato
+        </h2>
+        <div class="container">
+            
+            <form id="form" action='/send' method="POST">
+                <label for="name"></label>
+                <input class="login-input" id="name" placeholder="Nome" name="name" type="text">
+                <span class="login-input-border"></span>
+    
+                <label for="email"></label>
+                <input class="login-input" id="email" placeholder="E-mail" name="email" type="email">
+                <span class="login-input-border"></span>
+    
+                <label for="phone"></label>
+                <input class="login-input" id="phone" placeholder="Tel." name="phone" type="phone">
+                <span class="login-input-border"></span>
+    
+                <label for="mensagem"></label>
+                <textarea class="login-input"  name="mensagem" id="mensagem" placeholder="Digite sua mensagem." cols="45" rows="10"></textarea>
+                <span class="login-input-border"></span>
+                <button  class="login-submit" id="enviar" type="submit">Enviar</button>
+            </form>
+
+            <div id="carregamento">
+                <p>Enviando mensagem</p>
+                <div id="loader"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Alguns direitos reservados : <a href="https://github.com/mdar4" target="_blank">&copy; Dara Fontoura</a></p>
+    </footer>
+
+    <script src="/static/carousel/jquery.min.js"> </script>
+    <script src="/static/carousel/owl.carousel.min.js"></script>
+    <script src="/static/carousel/setup.js"></script>
+
+    <script type="text/javascript" src="/static/js/script.js"></script>
+</body>
+</html>
