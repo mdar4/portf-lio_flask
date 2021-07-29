@@ -10,7 +10,7 @@ btn.disabled = true
 
 nome.addEventListener('keyup', () => {
    nome.value.length < 2 ? nomeOk = false : nomeOk = true;
-   nomeOk && emailOk && msgOk ? btnEnviar.disabled = false : btn.disabled = true;
+   nomeOk && emailOk && msgOk ? btn.disabled = false : btn.disabled = true;
 
 })
 
